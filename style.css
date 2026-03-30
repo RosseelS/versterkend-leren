@@ -1,0 +1,106 @@
+:root {
+  --primary-color: #474163;
+  --secondary-color: #413857;
+  --hover-color: #00c8ff;
+  --font-color: #f8f8f8;
+  --accent-color: #ff6487;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  font-family: "Poppins", sans-serif;
+}
+
+main {
+  margin-top: 2rem;
+}
+
+/* Title */
+
+#title-container {
+  margin-bottom: 1.5rem;
+  text-align: center;
+  padding: 2rem 2.5rem;
+  border-radius: 15px;
+  background-color: var(--secondary-color);
+  color: var(--font-color);
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+  max-width: 600px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#title-container h1 {
+  font-size: 3rem;
+  margin-bottom: 1rem;
+}
+
+#title-container p {
+  font-size: 1rem;
+  line-height: 1.5;
+}
+
+#title-container a {
+  color: var(--accent-color);
+  text-decoration: underline;
+}
+
+#title-container a:hover {
+  color: var(--hover-color);
+}
+
+/* Canvas */
+
+#game-canvas {
+  border: 4px solid var(--primary-color);
+  border-radius: 15px;
+}
+
+/* Buttons */
+
+#control-buttons {
+  display: flex;
+  justify-content: space-between;
+}
+
+button {
+  width: 100px;
+  height: 50px;
+  background-color: var(--primary-color);
+  border: none;
+  border-radius: 25px;
+  box-shadow: 0 0.2rem 0 0 var(--accent-color);
+  font-weight: bold;
+  font-size: 1rem;
+  cursor: pointer;
+  color: var(--font-color);
+  margin-top: 10px;
+}
+
+button:hover {
+  background-color: var(--hover-color);
+  transition: all 0.1s ease-in-out;
+}
+
+button:active {
+  box-shadow: none;
+  transform: translateY(0.3rem);
+}
+
+#game-container {
+  position: relative;
+  width: fit-content;
+}
+
+#logo-container {
+  margin-top: 5rem;
+}
