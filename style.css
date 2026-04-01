@@ -7,41 +7,50 @@
 }
 
 * {
-  padding: 0;
   margin: 0;
+  padding: 0;
   box-sizing: border-box;
 }
 
 body {
+  font-family: "Poppins", sans-serif;
+  background: #f2f2f2;
+
   display: flex;
   justify-content: center;
   align-items: center;
+
   min-height: 100vh;
-  font-family: "Poppins", sans-serif;
 }
+
+/* MAIN */
 
 main {
-  margin-top: 2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2rem;
 }
 
-/* Title */
+/* TITLE */
 
 #title-container {
-  margin-bottom: 1.5rem;
   text-align: center;
-  padding: 2rem 2.5rem;
+  padding: 1.5rem 2.5rem;
+
   border-radius: 15px;
-  background-color: var(--secondary-color);
+  background: var(--secondary-color);
   color: var(--font-color);
-  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
-  max-width: 600px;
-  margin-left: auto;
-  margin-right: auto;
+
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.25);
+
+  /* GELIJKE BREEDTE ALS CANVAS */
+  width: 500px;
 }
 
 #title-container h1 {
-  font-size: 3rem;
-  margin-bottom: 1rem;
+  font-size: 2.5rem;
+  margin-bottom: 0.5rem;
 }
 
 #title-container p {
@@ -51,6 +60,7 @@ main {
 
 #title-container a {
   color: var(--accent-color);
+  font-weight: 600;
   text-decoration: underline;
 }
 
@@ -58,32 +68,51 @@ main {
   color: var(--hover-color);
 }
 
-/* Canvas */
+/* GAME */
+
+#game-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+}
 
 #game-canvas {
   border: 4px solid var(--primary-color);
   border-radius: 15px;
+  background: white;
 }
 
-/* Buttons */
+/* BUTTONS */
 
 #control-buttons {
   display: flex;
   justify-content: space-between;
+
+
+  /* GELIJKE BREEDTE ALS CANVAS */
+  width: 500px;
 }
 
 button {
-  width: 100px;
+  width: 90px;
   height: 50px;
+
   background-color: var(--primary-color);
   border: none;
   border-radius: 25px;
-  box-shadow: 0 0.2rem 0 0 var(--accent-color);
+
+  box-shadow: 0 0.2rem 0 var(--accent-color);
+
   font-weight: bold;
   font-size: 1rem;
+
   cursor: pointer;
   color: var(--font-color);
   margin-top: 10px;
+
+  padding-right: 20px;
+  padding-left: 20px;
 }
 
 button:hover {
@@ -96,11 +125,8 @@ button:active {
   transform: translateY(0.3rem);
 }
 
-#game-container {
-  position: relative;
-  width: fit-content;
-}
+/* LOGO */
 
-#logo-container {
-  margin-top: 5rem;
+#logo-container img {
+  width: 500px;
 }
