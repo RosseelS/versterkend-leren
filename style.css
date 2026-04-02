@@ -35,6 +35,7 @@ main {
 /* TITLE */
 
 #title-container {
+  margin: 2rem;
   text-align: center;
   padding: 1.5rem 2.5rem;
 
@@ -128,5 +129,6 @@ button:active {
 /* LOGO */
 
 #logo-container img {
+  margin: 2rem;
   width: 500px;
 }
